@@ -29,15 +29,29 @@
         }
         #S {
             height: 2.6vmax;
+            width: 2.6vmax;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: none;
+            border-radius: 2.5vmin;
+            font-size: 1.8vmin;
+            color: rgba(0, 0, 0, 0.938);
+            outline: none;
+            transition: 0.28s linear;
+            text-align: center;
+        }
+        #S:hover ,#S:focus{
+            height: 2.6vmax;
             width: 33vmax;
             z-index: 10;
-            background-color: rgba(255, 255, 255, 0.466);
+            background-color: rgba(255, 255, 255, 0.6);
             border: none;
             border-radius: 2.5vmin;
             padding-left: 2vmin;
             font-size: 1.8vmin;
             color: rgba(0, 0, 0, 0.938);
             outline: none;
+            text-align: left;
         }
         input[type=search]::-webkit-search-cancel-button {
             -webkit-appearance: none;
@@ -58,7 +72,7 @@
     <img src="https://www.bing.com/th?id=OHR.SaltDesert_EN-US2123050087_UHD.jpg" alt="微软每日壁纸">
     <div class="nav">
         <form action="" style="z-index: 10;">
-            <input type="search" id="S" autocomplete="off" onsearch="sFunction()"  />
+            <input type="search" id="S" autocomplete="off" onsearch="sFunction()" />
         </form>
     </div>
     </div>
