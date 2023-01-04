@@ -36,28 +36,33 @@
             border: none;
             border-radius: 2.5vmin;
             font-size: 1.8vmin;
-            color: rgba(0, 0, 0, 0.938);
+            color: rgba(0, 0, 0, 0);
             outline: none;
-            transition: 0.28s linear;
+            transition: 0.2s linear;
             text-align: center;
             border: 1.8px solid rgba(255, 255, 255, 0.7);
+            
         }
         #S:hover ,#S:focus{
             height: 2.6vmax;
             width: 33vmax;
             z-index: 10;
-            background-color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.5);
             border: none;
             border-radius: 2.5vmin;
             padding-left: 2vmin;
+            padding-right: 2vmin;
             font-size: 1.8vmin;
-            color: rgba(0, 0, 0, 0.938);
+            color: rgba(0, 0, 0, 0.6);
             outline: none;
             text-align: left;
+            
         }
         input[type=search]::-webkit-search-cancel-button {
             -webkit-appearance: none;
-        }     
+        } 
+          
+      
     </style>
     <script>
         function sFunction() {
@@ -68,13 +73,14 @@
                 window.location.href = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=" + S.value;
             }
         }      
+       
     </script>
 </head>
 <body>
     <img src="https://bingw.jasonzeng.dev" alt="微软每日壁纸">
     <div class="nav">
         <form action="" style="z-index: 10;">
-            <input type="search" id="S" autocomplete="off" onsearch="sFunction()" />
+            <input type="search" id="S" autocomplete="off" onsearch="sFunction()"/>
         </form>
     </div>
     </div>
